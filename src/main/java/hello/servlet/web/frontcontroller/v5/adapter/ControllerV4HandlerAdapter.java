@@ -3,7 +3,6 @@ package hello.servlet.web.frontcontroller.v5.adapter;
 import hello.servlet.web.frontcontroller.ModelView;
 import hello.servlet.web.frontcontroller.v4.ControllerV4;
 import hello.servlet.web.frontcontroller.v5.MyHandlerAdapter;
-import org.springframework.ui.Model;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -39,5 +38,4 @@ public class ControllerV4HandlerAdapter implements MyHandlerAdapter {
                 .forEachRemaining(paramName -> paramMap.put(paramName, request.getParameter(paramName)));
         return paramMap;
     }
-
 }
